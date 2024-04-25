@@ -43,6 +43,9 @@ The n-gram model is a type of language model that predicts the next word by stat
 
 5. **Text Generation**: The `generate_text` method starts by randomly selecting a bigram as the starting point. Then, based on the second word of the current bigram, it finds all possible subsequent words and randomly selects one as the next word. Thus generation exists some randomness and uncertainty.
 
+However, n-grams may not a viable approach for reverse math problems solver since n-grams generate new text that mimics the style and structure of the original text by analyzing the frequencies of these sequences. In reverse math problems, the relationships between numbers and variables are not obvious and may not be captured by n-grams. Therefore, we need to come up with a more suitable approach for reverse math problem solver.
+
+
 #### 2. Deep Learning Approach - Fine tune OpenAI gpt 3.5-Turbo
 1. **Data loading**: Load dataset from the json file `training_data.jsonl` Data is in the format of :
 
