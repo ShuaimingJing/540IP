@@ -22,7 +22,14 @@ Normal math problems require forward thoughts. Here's an example of Q & A pair f
 On the other hand, reverse math problems require backward thinking. Here's an example of reverse math problem:
 - James buys x packs of beef that are 4 pounds each. The price of beef is $5.50 per pound. How much did he pay? If we know the answer to the above question is 110, what is the value of unknown variable x?
 
-### Model Train
+### How to create Reverse Math Problems?
+- Split the question into individual tokens
+- Identify which tokens are numbers
+- Generate an inverse question by replacing the identified number with an unknown variable x
+- The replaced number is saved as the corresponding answer to this question
+
+
+### Model Train (training data include half forwards math problems and half corresponing reverse math problems)
 
 #### 1. Machine Learning model - N-gram Model
 
@@ -72,3 +79,12 @@ Directly put the reverse math problem into the prompt and let the model generate
     ]
 }
 ```
+
+### Metric Selection & Evaluation
+508 test data including half forward half backward math problems are used to testify the perfomance of models. Accurary is being useed as the metrice to evaluate the models. 
+- Accuray for Reverse Math Solver: 0.787
+- Accuray for GPT 3.5-Turbo with COT: 0.642
+- Accuray for GPT 3.5-Turbo without COT: 0.163
+
+### Web Interface
+A web interface is being developed using Streamlit to provide a user-friendly interface for the model. The interface will allow users to input their reverse math problems and get the corresponding answers to each model. Get access through the link https://reverse-math-solver.streamlit.app/
