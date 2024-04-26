@@ -42,7 +42,7 @@ def main():
 
 
     st.title("Reverse Math Solver")
-    st.image("image.png", width=1000)
+    st.image("image.png", width=400)
 
     # Initialize the conversation history
     if "conversation_history" not in st.session_state:
