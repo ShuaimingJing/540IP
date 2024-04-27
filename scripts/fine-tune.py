@@ -27,7 +27,7 @@ def main():
     train_json.to_json(output_dir, orient='records', lines=True)
 
     # Set up the API key and create a client
-    api_key = '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'
+    api_key = 'your_api_key'
     client = OpenAI(api_key=api_key)
 
     # Upload the file for fine-tuning
