@@ -66,7 +66,7 @@ However, n-grams may not a viable approach for reverse math problems solver sinc
 }
 ```
 
-2. **Fine tuning approach**: We fine tuned the gpt 3.5 model through the official OpenAI fine-tuning tutorial by calling ```client.fine_tuning.jobs.create``` method.
+2. **Fine tuning approach**: I fine tuned the gpt 3.5 model through the official OpenAI fine-tuning tutorial by calling ```client.fine_tuning.jobs.create``` method.
 
 #### 3. Naive Approach - base model of gpt 3.5-Turbo using COT & without using COT
 Directly put the reverse math problem into the prompt and let the model generate the answer. The default base model uses COT. For the model without, use the follwing prompt:
