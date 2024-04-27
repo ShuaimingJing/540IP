@@ -88,11 +88,12 @@ Directly put the reverse math problem into the prompt and let the model generate
 - Accuray for Reverse Math Solver: 0.787
 - Accuray for GPT 3.5-Turbo with COT: 0.642
 - Accuray for GPT 3.5-Turbo without COT: 0.163
+ <img width="315" alt="Screenshot 2024-04-26 at 8 28 46 PM" src="https://github.com/ShuaimingJing/540IP/assets/140912320/cf90ee19-1bd3-4403-8cc0-79e2900a475c">
+
 
 ### Conclusion 
 - There is an notable increase in performance of Reverse Math Solver compared to the base model
-- The same model will achieve better performance using COT<img width="315" alt="Screenshot 2024-04-26 at 8 28 46 PM" src="https://github.com/ShuaimingJing/540IP/assets/140912320/cf90ee19-1bd3-4403-8cc0-79e2900a475c">
-
+- The same model will achieve better performance using COT
 
 
 ### Web Interface
