@@ -1,4 +1,5 @@
 # Reverse Math Solver
+<img width="560" alt="image" src="https://github.com/ShuaimingJing/540IP/assets/140912320/25d05529-fb93-4ed1-843c-60bd2c6eef7b">
 
 ## Project Overview
 Current model like GPT doesn’t do a very good job on a lot of math problems without using chain of thought (COT), especially for reverse math problems. Even though using COT, it generates answer slowly and not always accurate. Thus, this project aims to improve the performance of GPT 3.5-Turbo without using COT by a dataset of reverse math problems. We will use a dataset of reverse math problems and fine-tune GPT 3.5-Turbo on it to generate more accurate and efficient answers.
