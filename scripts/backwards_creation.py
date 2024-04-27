@@ -5,18 +5,27 @@ import copy
 import argparse
 
 
-
+# Dictionary for converting string representations of numbers to their numeric form.
 string_number_dict = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
                       "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
                       "eleven": 11, "twelve": 12, "fifth": 5,
                       "sixteen": 16, "half": "50%"}
 
 
+
 def delete_extra_zero(n):
-    try:
+  """
+  Removes unnecessary trailing zeros from a number represented as a string.
+  
+  Args:
+      n (str): The number as a string.
+  
+  Returns:
+      str: The cleaned number as a string.
+  """  
+  try:
         n=float(n)
     except:
-        # print("None {}".format(n))
         return n
     if isinstance(n, int):
         return str(n)
@@ -28,7 +37,10 @@ def delete_extra_zero(n):
     
     
 class InverseQuestions:
-    def __init__(self, args):
+  """
+  A class to process questions by inversing the presence of numerical values and turning them into variables.
+  """  
+  def __init__(self, args):
 
         self.output_clean_path = f"{self.input_path}-clean.json"
         self.output_path = f"{self.input_path}-backward.json"
